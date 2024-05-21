@@ -18,12 +18,21 @@ Workspace: Create a workspace within the project, which will be linked to this G
 
 # Integration with GitHub
 
-The Terraform workspace is integrated with this GitHub repository. This integration ensures that whenever code is committed to the repository, a Terraform run is triggered automatically.
+The Terraform workspace is integrated with this GitHub repository using Terraform Version Control Workflow (VCS-driven workflow). This integration ensures that whenever code is committed to the repository, a Terraform run is triggered automatically.
 
 # Terraform Run with Terraform Workspace
 
-Terraform Plan: During the run, Terraform will generate an execution plan to show what changes will be made.
-Terraform Apply: After reviewing the plan, the changes can be applied to deploy the resources.
+# Terraform Plan: 
+During the run, Terraform will generate an execution plan to show what changes will be made.
+# Terraform Apply: 
+After reviewing the plan, the changes can be applied to deploy the resources.
+
+# Auto Apply
+
+Sets this workspace to automatically apply changes for successful runs. If disabled (below options), runs require operator approval for executing the Terraform plan and Terraform apply
+
+- Auto-apply API, CLI, & VCS runs (Automatically apply changes when a terraform plan is successfull)
+- Auto-apply run triggers (Run Triggers create new plan)
 
 # Secrets Management
 
