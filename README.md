@@ -14,8 +14,11 @@ Terraform v1.8.2
 Make sure you have Terraform Cloud Account (https://app.terraform.io). 
 
 Additional structure required:
+
 Terraform Cloud Organization: Create or use an existing organization within your Terraform Cloud account. 
+
 Terraform Cloud Project: Create or use an existing project within your Terraform Cloud account.
+
 Workspace: Create a workspace within the project, which will be linked to this GitHub repository.
 
 # Integration with GitHub
