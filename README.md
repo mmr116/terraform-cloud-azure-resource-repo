@@ -59,7 +59,7 @@ These values must be stored in Terraform Cloud as sensitive variables to ensure 
 
 Clone this repository to your local machine: 
 
-git clone repository-url
+- git clone repository-url
 
 # Review and Modify Configuration
 
@@ -67,20 +67,22 @@ Review the configuration files (main.tf, variables.tf) to ensure they match your
 
 # Commit Changes to GitHub
 
-git add .
+- git add .
 
-git status
+- git status
 
-git commit -m "Your commit message"
+- git commit -m "Your commit message"
 
-git push origin main
+- git push origin main
 
 # Terraform Cloud Run
 
-Terraform Plan: 
+- Terraform Plan: 
+
 Terraform Cloud will automatically create an execution plan showing what changes will be made to your infrastructure.
 
-Terraform Apply: 
+- Terraform Apply: 
+
 After reviewing and confirming the plan in the Terraform Cloud interface, the changes will be applied to deploy the resources.
 
 # Verify Deployment
