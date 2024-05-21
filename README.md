@@ -48,7 +48,9 @@ These values must be stored in Terraform Cloud as sensitive variables to ensure 
 
 # Clone Repository
 
-Clone this repository to your local machine: git clone repository-url
+Clone this repository to your local machine: 
+
+git clone repository-url
 
 # Review and Modify Configuration
 
@@ -57,14 +59,18 @@ Review the configuration files (main.tf, variables.tf) to ensure they match your
 # Commit Changes to GitHub
 
 git add .
+
 git status
+
 git commit -m "Your commit message"
+
 git push origin main
 
 # Terraform Cloud Run
 
 Terraform Plan: 
 Terraform Cloud will automatically create an execution plan showing what changes will be made to your infrastructure.
+
 Terraform Apply: 
 After reviewing and confirming the plan in the Terraform Cloud interface, the changes will be applied to deploy the resources.
 
@@ -74,6 +80,3 @@ After a successful deployment, verify that the Azure Key Vault and other resourc
 # Cleanup
 
 To clean up the deployed resources, use Terraform to destroy them. This can be triggered from the Terraform Cloud interface. (Workspace -> Destruction and Deletion)
-
-
-
