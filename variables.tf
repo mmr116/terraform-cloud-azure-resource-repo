@@ -1,19 +1,19 @@
-variable "subscription_id" {
+variable "ARM_SUBSCRIPTION_ID" {
   description = "Azure subscription ID"
   sensitive   = true
 }
 
-variable "client_id" {
+variable "ARM_CLIENT_ID" {
   description = "Azure client ID"
   sensitive   = true
 }
 
-variable "client_secret" {
+variable "ARM_CLIENT_SECRET" {
   description = "Azure client secret"
   sensitive   = true
 }
 
-variable "tenant_id" {
+variable "ARM_TENANT_ID" {
   description = "Azure tenant ID"
   sensitive   = true
 }
