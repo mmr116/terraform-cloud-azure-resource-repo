@@ -27,19 +27,17 @@ The Terraform workspace is integrated with this GitHub repository using Terrafor
 
 Here’s how the integration works:
 
-# Authentication: 
+- Authentication: The Terraform workspace is authenticated with the GitHub repository through OAuth or a personal access token. This allows Terraform Cloud to monitor the repository for changes. (https://developer.hashicorp.com/terraform/tutorials/cloud/github-oauth)
 
-The Terraform workspace is authenticated with the GitHub repository through OAuth or a personal access token. This allows Terraform Cloud to monitor the repository for changes. (https://developer.hashicorp.com/terraform/tutorials/cloud/github-oauth)
+- Terraform Run within Terraform Workspace (Workspaces -> Runs)
 
-# Terraform Run within Terraform Workspace (Workspaces -> Runs)
-
-# Terraform Plan: 
+- Terraform Plan: 
 During the run, Terraform will generate an execution plan to show what changes will be made.
 
-# Terraform Apply: 
+- Terraform Apply: 
 After reviewing the plan, the changes can be applied to deploy the resources.
 
-# Auto Apply
+- Auto Apply
 
 Sets this workspace to automatically apply changes for successful runs. If disabled (below options), runs require operator approval for executing the Terraform plan and Terraform apply. (Workspaces -> Settings -> General)
 
