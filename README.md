@@ -25,6 +25,12 @@ Workspace: Create a workspace within the project, which will be linked to this G
 
 The Terraform workspace is integrated with this GitHub repository using Terraform Version Control Workflow (VCS-driven workflow). This integration ensures that whenever code is committed to the repository, a Terraform run is triggered automatically. Additional configurations can be done to ensure if Terraform plan and Terraform apply will run automatically or with operator's approval.
 
+Here’s how the integration works:
+
+# Authentication: 
+
+The Terraform workspace is authenticated with the GitHub repository through OAuth or a personal access token. This allows Terraform Cloud to monitor the repository for changes. (https://developer.hashicorp.com/terraform/tutorials/cloud/github-oauth)
+
 # Terraform Run within Terraform Workspace (Workspaces -> Runs)
 
 # Terraform Plan: 
