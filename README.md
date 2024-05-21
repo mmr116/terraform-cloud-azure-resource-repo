@@ -7,7 +7,7 @@ This repository contains Terraform configuration files for deploying an Azure Ke
 
 # Assumptions
 # Terraform Version
-Terraform v1.8.2
+Terraform v1.8.2, git version 2.27.0 (installed on CentOS Linux release 8.5.2111)
 
 # Terraform Cloud Structure
 
